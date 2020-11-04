@@ -1,68 +1,93 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
+* {
+  box-sizing: border-box;
 }
-html{
-    font-family: "helvetica neue", sans-serif;
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /*border: 1px solid red;*/
 }
-header{
-    background: #C3D3B9;
-    height: 130px;
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+header {
+  /*background-color: #C3D3B9;
+  display: flex;
+  align-items: flex-end;*/
+}
+
+.logo {
+  background-color: #C3D3B9;
+  padding: 70px 0px 15px 15px;
+}
+
+.menu {
+ background-color: #C3D3B9;
+ padding: 93px 20px 0px 15px;
+
 
 }
-.logo{
-    padding: 60px 0px 10px 30px;
-    float: left;
+
+.menu ul {
+  /*display: flex;*/
+  float: right;
+  list-style-type: none;
 
 }
-.nav{
-    /*border-bottom: 1px solid #EAEAEB;*/
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
+
+.menu li {
+  display: inline;
+  padding: 14px 16px;
+
 }
-.menu{
-    margin: 0 30px 0 0;
-    padding: 70px 30px 10px 0px;
-}
-.menu a {
-    clear: right;
-    text-decoration: none;
+
+.navbar{
     color: black;
-    margin: 0 10px;
-    line-height: 20px;
-}
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-    label{
-   display: block;
-   cursor: pointer;
+.footer {
+    background-color: #0d4436;
+    color: white;
+    text-align: center;
     }
-    .menu {
-   text-align: center;
-   width: 100%;
-   display: none;
 
-    }
-    .menu a {
-    display: block;
-    /*border-bottom: 1px solid #EAEAEB;*/
-    margin: 90px 0px 0px 0px;
-    }
-    #toggle:checked + .menu {
-    display: block;
+/*.frontphoto{
+    position: center;
+}*/
 
-    }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .menu ul {
+    float: left;
+  }
+
+  .menu {
+   background-color: #C3D3B9;
+   padding: 0px 0px 0px 0px;
+   }
+
+   .logo {
+     background-color: #C3D3B9;
+     padding: 70px 0px 15px 60px;
+
+   }
 }

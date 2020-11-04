@@ -8,19 +8,31 @@
 </head>
 <body>
     <header>
-        <div class="nav">
-            <div class="logo">
-                <a href="index.html"><img src="./img/INOVA2.png" alt="logo" ></a>
-            </div>
-            <label for="toggle">&#9776</label>
-           <input type="checkbox" id="toggle">
-            <div class="menu">
-                <a href="about.html">ABOUT</a>
-                <a href="staff.html">STAFF</a>
-                <a href="schedule.html">SCHEDULE</a>
-            </div>
+        <div class="col-6 logo">
+            <a href="index.html">
+                <img src="./img/INOVA2.png" alt="logo" >
+            </a>
         </div>
+            <div class="col-6 menu">
+                <ul>
+                    <li><a class="navbar" href="about.html">ABOUT</a></li>
+                    <li><a class="navbar" href="staff.html">STAFF</a></li>
+                    <li><a class="navbar" href="schedule.html">SCHEDULE</a></li>
+                </ul>
+            </div>
     </header>
-
+    <main>
+        <picture>
+            <source srcset="./img/idea-innovation-business-inspiration.jpg" media="(max-width: 768px)">
+            <source srcset="./img/idea-innovation-business-inspiration2.jpg">
+            <img class="col-12" src="./img/idea-innovation-business-inspiration2.jpg" alt="innovation photo">
+        </picture>
+        <!--<div>
+            <img class="col-12 frontphoto" src="./img/idea-innovation-business-inspiration2.jpg" alt="innovation photo">
+        </div>-->
+    </main>
+    <div class=" col-12 footer">
+        <p class="contact">Contact information HERE...</p>
+    </div>
 </body>
 </html>
