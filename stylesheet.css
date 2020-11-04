@@ -39,21 +39,17 @@ header {
 .menu {
  background-color: #C3D3B9;
  padding: 93px 20px 0px 15px;
-
-
 }
 
 .menu ul {
   /*display: flex;*/
   float: right;
   list-style-type: none;
-
 }
 
 .menu li {
   display: inline;
   padding: 14px 16px;
-
 }
 
 .navbar{
@@ -61,14 +57,30 @@ header {
     text-decoration: none;
 }
 
+.heading{
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px 15px 0px 60px;
+}
+
+.brødtekst{
+    padding: 0px 15px 50px 60px;
+    font-family: "arial", sans-serif ;
+    font-weight: 500;
+}
+.bilde{
+    padding: 15px 60px 50px 15px;
+}
+
 .footer {
     background-color: #0d4436;
     color: white;
     text-align: center;
-    }
+    font-weight: 200;
+ }
 
-/*.frontphoto{
-    position: center;
+/*.contact{
+    font-weight: 200;
 }*/
 
 @media only screen and (max-width: 768px) {
@@ -83,11 +95,16 @@ header {
   .menu {
    background-color: #C3D3B9;
    padding: 0px 0px 0px 0px;
-   }
+  }
 
-   .logo {
-     background-color: #C3D3B9;
-     padding: 70px 0px 15px 60px;
-
-   }
+  .logo {
+   background-color: #C3D3B9;
+   padding: 70px 0px 15px 60px;
+}
+.brødtekst{
+    padding: 0px 60px 15px 60px;
+}
+.bilde{
+    padding: 0px 60px 30px 60px;
+}
 }
