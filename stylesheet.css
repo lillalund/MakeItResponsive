@@ -79,9 +79,10 @@ header {
     font-weight: 200;
  }
 
-/*.contact{
+.contact{
+    color: white;
     font-weight: 200;
-}*/
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
