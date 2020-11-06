@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+
+.team-section{
+    /*background-color: #C3D3B9;*/
+    min-height: 20vh;
+    padding: 20px 5px 5px;
+    padding-left: 70px;
+  }
+
+.info{
+    color: black;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 900;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-section{
+    /*background-color: #0d4436;*/
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+    color: black;
+}
+
+.container{
+
+    max-width: 1170px;
+    min-height: 20vh;
+    color: #0d4436;
+
+}  
+
+.section-title.p{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0 0;
+    color: black;
+
+}  
+
+.team-items{
+    /*background-color: #0d4436;*/
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }    
+
+.team-items .item{
+    /*background-color: #0d4436;*/
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    transition: all .5s ease;
+    margin-bottom: 30px;
+
+   }       
+
+.team-section .team-items .item img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+
+     }      
+
+.team-section .team-items .inner{
+    position: relative;
+    z-index: 11;
+    padding: 0 15px;
+
+}   
+
+.team-section .team-items .item .inner .info{  
+    background-color: #C3D3B9;
+    text-align: center;
+    padding: 20px; 15px;
+    border-color: 8px;
+    transition: all .5s ease;
+    margin-top: -40px;
+    border-radius: 4%;
+}     
+
+.team-section .team-items .item:hover .info{
+    transform: translateY(-20px);
+    } 
+
+.team-section .team-items .h4{  
+    font-size: 22px;
+    font-weight: 600;
+    color: black; 
+}     
+    
+.team-section .team-items .p{  
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin: 10px 0 0;
+}  
+
+.section-title .h1{  
+    color: white;
+    } 
+
+@media (max-width: 991px){ 
+   .team-section .team-items .item{ 
+    flex-basis: calc(50% - 30px);
+    max-width: calc(50% - 30px);
+ }     
+}  
+
+@media (max-width: 767px){ 
+   .team-section .team-items .item{ 
+    flex-basis: calc(100%);
+    max-width: calc(100%);
+ }     
+}  
+
+    
